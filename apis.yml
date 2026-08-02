@@ -1,8 +1,23 @@
 aid: unbound
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/unbound.png
 name: Unbound
-description: 'Unbound is a company surfaced as a portfolio company of pantera-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: crypto. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Unbound (Unbound Finance) was a DeFi protocol describing itself as "The DeFi
+  Treasury for Liquidity Pool Tokens," enabling liquidity providers to collateralize LP tokens
+  on Ethereum. It is a Pantera Capital portfolio company (sector: crypto). As of 2026-07-21 the
+  project appears inactive: unbound.finance returns HTTP 404, its documentation host
+  (wiki.unbound.finance) no longer resolves, and its GitHub organization contains only forked
+  repositories - no public API surface, developer portal, or first-party packages were found.'
 url: https://raw.githubusercontent.com/api-evangelist/unbound/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,16 +27,31 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Crypto
+- DeFi
+- Liquidity
+- Ethereum
+- Venture Portfolio
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/unbound-domain-security.yml
 - type: Website
   url: https://www.unbound.finance/
+- type: GitHubOrganization
+  url: https://github.com/unbound-finance
+- type: LLMsTxt
+  url: llms/unbound-llms.txt
