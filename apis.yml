@@ -30,6 +30,9 @@ description: 'Unbound (Unbound Finance) was a DeFi protocol describing itself as
   (wiki.unbound.finance) no longer resolves, and its GitHub organization contains only forked
   repositories - no public API surface, developer portal, or first-party packages were found.'
 url: https://raw.githubusercontent.com/api-evangelist/unbound/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "As of 2026-07-21 the project appears inactive: unbound.finance returns HTTP 404, its documentation host (wiki.unbound.finance) no longer resolves, and its GitHub organization contains only forked repo"
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
